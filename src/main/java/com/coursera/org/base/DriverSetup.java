@@ -19,7 +19,8 @@ public class DriverSetup {
 			Scanner scan = new Scanner(System.in);
 			System.out.println(
 					"Which browser would you like to execute the script on? \n" + "1.Google Chrome \n" + "2.Firefox");
-			int browserChoice = scan.nextInt();
+			//int browserChoice = scan.nextInt();
+			int browserChoice = 1;
 			scan.close();
 
 			if (browserChoice == 1) {
