@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="Smoke Test">
+
+		<groups>
+			<run>
+				<include name="Smoke Test"></include>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.coursera.org.test.TestSetup"></class>
+			<class name="com.coursera.org.test.IdentifyCoursesTest"></class>
+			<class
+				name="com.coursera.org.test.LanguageLearningCourseCountTest"></class>
+			<class
+				name="com.coursera.org.test.FormFillingTestWithValidData"></class>
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

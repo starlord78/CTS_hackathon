@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Smoke Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">186,946</td><td>Smoke Test</td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Smoke Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.coursera.org.test.LanguageLearningCourseCountTest</td><td><a href="#m0">applyLanguageFilter</a></td><td rowspan="1">1633188710498</td><td rowspan="1">30186</td></tr><tr class="failedeven"><td><a href="#m1">applyLevelFilter</a></td><td rowspan="1">1633188740691</td><td rowspan="1">30026</td></tr><tr class="failedeven"><td><a href="#m2">loadLanguageLearningPage</a></td><td rowspan="1">1633188706590</td><td rowspan="1">3904</td></tr><tr><th colspan="4">Smoke Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.coursera.org.test.FormFillingTestWithValidData</td><td><a href="#m3">fillValidValues</a></td><td rowspan="1">1633188828286</td><td rowspan="1">7</td></tr><tr class="passedeven"><td><a href="#m4">locateForm</a></td><td rowspan="1">1633188770725</td><td rowspan="1">57557</td></tr><tr class="passedodd"><td rowspan="6">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses</td><td><a href="#m5">returnHome</a></td><td rowspan="1">1633188692031</td><td rowspan="1">14557</td></tr><tr class="passedodd"><td><a href="#m6">validateFirstCourse</a></td><td rowspan="1">1633188684130</td><td rowspan="1">1364</td></tr><tr class="passedodd"><td><a href="#m7">validateSearchCourse</a></td><td rowspan="1">1633188641435</td><td rowspan="1">20451</td></tr><tr class="passedodd"><td><a href="#m8">validateSecondCourse</a></td><td rowspan="1">1633188685499</td><td rowspan="1">6530</td></tr><tr class="passedodd"><td><a href="#m9">validateSelectLanguage</a></td><td rowspan="1">1633188661897</td><td rowspan="1">11765</td></tr><tr class="passedodd"><td><a href="#m10">validateSelectLevel</a></td><td rowspan="1">1633188673666</td><td rowspan="1">10461</td></tr></tbody>
+</table>
+<h2>Smoke Test</h2><h3 id="m0">com.coursera.org.test.LanguageLearningCourseCountTest#applyLanguageFilter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;main&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/span&quot;}
+  (Session info: chrome=94.0.4606.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KARAN&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\karan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce138cee6d4c4988d8087dd8a735b081
+*** Element info: {Using=xpath, value=//*[@id=&quot;main&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.coursera.org.base.Base.findElementByXpath(Base.java:70)
+	at com.coursera.org.functions.LanguageLearningCoursesCount.languageFilter(LanguageLearningCoursesCount.java:44)
+	at com.coursera.org.test.LanguageLearningCourseCountTest.applyLanguageFilter(LanguageLearningCourseCountTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.coursera.org.test.LanguageLearningCourseCountTest#applyLevelFilter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;main&apos;]/div/div[2]/div/div[2]/div[2]/div/div[1]/div/span&quot;}
+  (Session info: chrome=94.0.4606.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;KARAN&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\karan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce138cee6d4c4988d8087dd8a735b081
+*** Element info: {Using=xpath, value=//*[@id=&apos;main&apos;]/div/div[2]/div/div[2]/div[2]/div/div[1]/div/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.coursera.org.base.Base.findElementByXpath(Base.java:70)
+	at com.coursera.org.functions.LanguageLearningCoursesCount.levelFilter(LanguageLearningCoursesCount.java:101)
+	at com.coursera.org.test.LanguageLearningCourseCountTest.applyLevelFilter(LanguageLearningCourseCountTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.coursera.org.test.LanguageLearningCourseCountTest#loadLanguageLearningPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Top Language Learning Courses - Learn Language Learning Online | Coursera] but found [Coursera | Online Courses &amp; Credentials From Top Educators. Join for Free]
+	at com.coursera.org.test.LanguageLearningCourseCountTest.loadLanguageLearningPage(LanguageLearningCourseCountTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.coursera.org.test.FormFillingTestWithValidData#fillValidValues</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.coursera.org.test.FormFillingTestWithValidData#locateForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#returnHome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#validateFirstCourse</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"> <br/>Details of First Course :<br/> <br/>Course Name - Web Design for Everybody: Basics of Web Development & Coding</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#validateSearchCourse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#validateSecondCourse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#validateSelectLanguage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.coursera.org.test.IdentifyCoursesTest$validateIdentifyCourses#validateSelectLevel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
